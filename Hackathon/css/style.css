@@ -1,0 +1,36 @@
+body {
+    background-color: grey;
+
+}
+.container{
+    width: 75%;
+    margin: 0 auto;
+    background-color: grey;
+    box-shadow: 1px 1px 10px gray;
+}
+
+#container-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+.left{
+  color: black;
+  text-align: center;
+}
+.tutorial{
+  padding-left: 100px;
+  box-shadow: -1px 1px 1px 15px #53b4e0;
+}
+.map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.image_map{
+  justify-content: center;
+  
+}

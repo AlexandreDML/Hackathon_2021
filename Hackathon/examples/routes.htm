@@ -1,0 +1,33 @@
+<html>
+  <head><title>Cable</title></head>
+  <body>
+    <script src="../dist/cable.dev.js"></script>
+    <script>
+      Cable.define({
+        $:Cable.library("bower_components/jquery/dist/jquery.min.js"),
+
+        router:Cable.router([ 
+          "admin/:action/:id",
+          ":controller/:action/:id"
+        ]),
+
+        view:Cable.view("router", {
+          user:{
+            home:function(request) {
+              console.log("Home");
+            },
+            view:function(request) {
+              console.log("Viewing", request().id);
+            }
+          }
+        }),
+
+        log404:function(router_routeIndex) {
+          if (router_routeIndex() === -1) {
+            console.log(404);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

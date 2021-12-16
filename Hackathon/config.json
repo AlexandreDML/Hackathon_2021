@@ -1,0 +1,194 @@
+{
+    "step0" : {
+        "production" : 205.81,
+        "energieRev" : 3.69
+    },
+    "step1" : {
+        "production" : 187.02,
+        "energieRev" : 2.98
+    },
+    "step2" : {
+        "production" : 168.94,
+        "energieRev" : 6.77
+    },
+    "step3" : {
+        "production" : 158.51,
+        "energieRev" : 6.86
+    },
+    "step4" : {
+        "production" : 151.16,
+        "energieRev" : 4.82
+    },
+    "step5" : {
+        "production" : 146.27,
+        "energieRev" : 5.44
+    },
+    "step6" : {
+        "production" : 143.93,
+        "energieRev" : 5.88
+    },
+    "step7" : {
+        "production" : 141.8,
+        "energieRev" : 3.79
+    },
+    "step8" : {
+        "production" : 142.67,
+        "energieRev" : 6.68
+    },
+    "step9" : {
+        "production" : 142.37,
+        "energieRev" : 5.69
+    },
+    "step10" : {
+        "production" : 149.79,
+        "energieRev" : 4.73
+    },
+    "step11" : {
+        "production" : 157.15,
+        "energieRev" : 2.87
+    },
+    "step12" : {
+        "production" : 167.95,
+        "energieRev" : 5.74
+    },
+    "step13" : {
+        "production" : 181.77,
+        "energieRev" : 5.65
+    },
+    "step14" : {
+        "production" : 196.72,
+        "energieRev" : 3.22
+    },
+    "step15" : {
+        "production" : 205.2,
+        "energieRev" : 5.17
+    },
+    "step16" : {
+        "production" : 216.43,
+        "energieRev" : 10.54
+    },
+    "step17" : {
+        "production" : 226.39,
+        "energieRev" : 17.91
+    },
+    "step18" : {
+        "production" : 235.52,
+        "energieRev" : 22.57
+    },
+    "step19" : {
+        "production" : 243.29,
+        "energieRev" : 24.41
+    },
+    "step20" : {
+        "production" : 247.36,
+        "energieRev" : 28.65
+    },
+    "step21" : {
+        "production" : 251.43,
+        "energieRev" : 45.16
+    },
+    "step22" : {
+        "production" : 244.51,
+        "energieRev" : 39.14
+    },
+    "step23" : {
+        "production" : 242.23,
+        "energieRev" : 45.41
+    },
+    "step24" : {
+        "production" : 246.61,
+        "energieRev" : 54.57
+    },
+    "step25" : {
+        "production" : 240.63,
+        "energieRev" : 70.39
+    },
+    "step26" : {
+        "production" : 238.19,
+        "energieRev" : 73.21
+    },
+    "step27" : {
+        "production" : 231.46,
+        "energieRev" : 67.91
+    },
+    "step28" : {
+        "production" : 228.82,
+        "energieRev" : 62.26
+    },
+    "step29" : {
+        "production" : 225.89,
+        "energieRev" : 59.55
+    },
+    "step30" : {
+        "production" : 220.28,
+        "energieRev" : 47.84
+    },
+    "step31" : {
+        "production" : 215.37,
+        "energieRev" : 41.5
+    },
+    "step32" : {
+        "production" : 216.9,
+        "energieRev" : 34.34
+    },
+    "step33" : {
+        "production" : 214.07,
+        "energieRev" : 24.86
+    },
+    "step34" : {
+        "production" : 214.4,
+        "energieRev" : 14.25
+    },
+    "step35" : {
+        "production" : 217.2,
+        "energieRev" : 13.4
+    },
+    "step36" : {
+        "production" : 225.41,
+        "energieRev" : 9.06
+    },
+    "step37" : {
+        "production" : 237.75,
+        "energieRev" : 4.98
+    },
+    "step38" : {
+        "production" : 254.62,
+        "energieRev" : 12.89
+    },
+    "step39" : {
+        "production" : 263.39,
+        "energieRev" : 11.21
+    },
+    "step40" : {
+        "production" : 255.15,
+        "energieRev" : 11.63
+    },
+    "step41" : {
+        "production" : 239.29,
+        "energieRev" : 11.03
+    },
+    "step42" : {
+        "production" : 228.25,
+        "energieRev" : 4.11
+    },
+    "step43" : {
+        "production" : 214.38,
+        "energieRev" : 4.88
+    },
+    "step44" : {
+        "production" : 209.55,
+        "energieRev" : 2.73
+    },
+    "step45" : {
+        "production" : 216.49,
+        "energieRev" : 5.27
+    },
+    "step46" : {
+        "production" : 229.47,
+        "energieRev" : 6.32
+    },
+    "step47" : {
+        "production" : 214.01,
+        "energieRev" : 5.93
+    }
+}

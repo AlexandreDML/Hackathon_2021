@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Projet EDF | Equipe 5</title>
+  </head>
+  <body>
+      <div class="container">
+          <header>
+              <h1>premier test</h1>
+          </header>
+  		    <main>
+  					<div id="container-main">
+  					  <div class="left">
+                <h2>paramètre</h2>
+  							<input id="input" type="text" value="">
+                <span id="output"></span>
+  					  </div>
+  					  <div class="tutorial">
+  						  <p> tutorial </p>
+  					  </div>
+  				  </div>
+          </main>
+  		</div>
+      <div class="map">
+          <div class="image_map">
+            <img id="background" src="./images/corse.png">
+          </div>
+      </div>
+      <script src="./js/cable.min.js"></script>
+      <script>
+        Cable.define({
+          input:function(event) {
+            var
+              e = document.getElementById("input"),
+              f = function() { event(e.value); };
+            event.setDefault(e.value);
+            e.onchange = f;
+            e.onkeyup = f;
+          },
+          output:function(input) {
+            document.getElementById("output").innerText = (
+              "You typed '" + input() + "'"
+            );
+          }
+        });
+      </script>
+  </body>
+</html>

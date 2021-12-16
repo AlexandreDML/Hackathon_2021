@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Cable</title>
+    <style>
+      html, body { font-family: sans-serif; text-align: center; }
+      #main { 
+        width: 500px; margin: 30px auto; padding: 10px; border:1px solid #ccc; 
+      }
+      #symbol { margin-bottom: 20px; }
+      #name { font-size: 45px; }
+      #ask { font-size: 25px; margin-bottom: 20px; }
+      #updated { color:#777; }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <input id="symbol" value="GOOG" />
+      <div id="name"></div>
+      <div id="ask"></div>
+      <div id="updated"></div>
+    </div>
+    <script src="../dist/cable.min.js"></script>
+    <script>
+      Cable.define({
+        $:Cable.library("bower_components/jquery/dist/jquery.min.js"),
+
+        interval:Cable.interval(10000, true),
+        
+        symbol:Cable.textbox("#symbol"),
+
+        quoteData:Cable.json(function(symbol, result, interval) {
+          var 
+            before = 'http://query.yahooapis.com/v1/public/yql?q=select * from yahoo.finance.quotes where symbol in ("',
+            after = '") &env=http%3A%2F%2Fdatatables.org%2Falltables.env&format=json';
+
+          result(before + symbol() + after);
+        }),
+
+        quote:function(quoteData, result) {
+          if (
+            quoteData().query.results &&
+            quoteData().query.results.quote.AskRealtime != null
+          ) {
+            result({
+              askingPrice:quoteData().query.results.quote.AskRealtime,
+              name:quoteData().query.results.quote.Name
+            });
+          }
+          else {
+            result({
+              askingPrice:"N/A",
+              name:"{ Unknown Company }"
+            });
+          }
+        },
+
+        ask:function(quote, result) { result(quote().askingPrice); },
+        name:function(quote, result) { result(quote().name); },
+
+        dispName:Cable.template("#name", "{{name}}"),
+        dispAsk:Cable.template("#ask", "${{ask}} per share"),
+
+        intervalTime:function(init, interval, result) {
+          result(interval().toLocaleTimeString());
+        },
+        dispTime:Cable.template("#updated", "Updated at {{intervalTime}}")
+
+      });
+    </script>
+  </body>
+</html>
