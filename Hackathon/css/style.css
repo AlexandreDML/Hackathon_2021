@@ -1,0 +1,180 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2466a2;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  position: absolute;
+  z-index: 10;
+}
+
+header img {
+  height: 40px;
+}
+
+#hackathon {
+  position: absolute;
+  text-align: center;
+  padding: 10px 20px;
+  top: 0;
+  right: 0;
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 18px;
+  color: #0B326D;
+  background-color: white;
+  border: 2px solid #0B326D;
+  border-top: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-right: 25px;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/corse.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#tutorial{
+  top: 100px;
+  right: 200px;
+  width: 500px;
+}
+
+.info{
+  color: black;
+  top: 150px;
+}
+
+.btn-play{
+  color: black;
+  float: right;
+  padding-right: 30px;
+}
+
+.card{
+  position: absolute;
+  border: solid 2px #0B326D;
+  border-radius: 10px;
+  padding: 20px 15px;
+  width: 15%;
+  margin-top: 50px;
+  z-index: 20;
+}
+
+.card > ul {
+  list-style-type: none;
+}
+
+/* Haut de chaque conteneur - permet de déplacer chaque conteneur */
+.card-header {
+    border-radius: 1.5vmin 1.5vmin 0.2vmax 0.2vmax;
+    padding: 1.25%;
+    margin-bottom: 3.5%;
+    font-weight: bold;
+    cursor: move;
+    z-index: 21;
+}
+
+.HUD{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F14516;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ccc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.choice {
+  margin-top: 5px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#graph{
+  top: 450px;
+}
+
+#graph > img {
+  height: 75px;
+  width: 200px;
+}
+
+#envoyer {
+  bottom: 100px;
+  right: 500px;
+}
